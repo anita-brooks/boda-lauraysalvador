@@ -1,0 +1,298 @@
+
+/* colores globales */
+.beige-color{
+	color: #F6F5F2;
+}
+
+.non-black-color{
+	color: #373736;
+}
+
+.golden-color{
+	color: #CBB989;
+}
+
+/* FUENTES USADAS -IMPORTED
+*	SILK SERIF FONT
+*	silk font regular , semibold , semibold italic
+*
+ */
+
+@font-face {
+font-family: "Silk";
+src: url("silk_font_webkit/silkserif-regular-webfont.woff") format("woff");
+}
+
+@font-face {
+font-family: "Silk Semibold";
+src: url("silk_font_webkit/silkserif-semibold-webfont.woff") format("woff");
+}
+
+@font-face {
+font-family: "Silk Semi Italic";
+src: url("silk_font_webkit/silkserif-semibolditalic-webfont.woff") format("woff");
+}
+
+/** FUENTE MUSE
+ * HV Muse , HV Muse italic
+*/
+
+@font-face {
+font-family: "Muse Regular";
+src: url("muse_font_webkit/muse_regular-webfont.woff") format("woff");
+}
+
+@font-face {
+font-family: "Muse Italic";
+src: url("muse_font_webkit/muse_italic-webfont.woff") format("woff");
+}
+
+
+
+.inicio {
+	color: #CBB989;
+	padding-bottom: 2rem;
+	padding-top: 5rem;
+}
+
+.novios-titulos {
+	font-family: "Silk";
+}
+
+
+.titlem {
+	font-size: 2.5em;
+}
+
+.nombres1{
+	font-size: 3em;
+}
+
+.block_titulos{
+	padding-bottom: 1rem;
+}
+
+.no-margin-bottom{
+	margin-bottom: 0;
+}
+
+.imagen-prop {
+	padding-bottom: 3rem;
+}
+
+.imagen-prop img {
+  	width: 100%;
+  	height: auto;
+}
+
+.vestimenta img {
+	width: 10rem;
+	height: auto;
+}
+
+.regalo img {
+	width: 3rem;
+	height: auto;
+	margin: 1em 0.5em 1em 0;
+}
+
+.liverpool img {
+	width: 15rem;
+	height: auto;
+}
+
+/*hr*/
+.smol {
+	width: 8em;
+    margin: 30px auto;
+}
+
+.universal{
+	font-family: "Muse Regular";
+	font-weight:normal;
+	font-style:normal;
+	background-color: #F6F5F2;
+	padding: 0 0 2rem 0;
+}
+
+hr {
+	color: #C3B787;
+}
+
+
+
+/**. C3B787 */
+
+button {
+	background-color: #CBB989;
+    color: white;
+    border: none;
+    font-family: 'Muse Regular';
+    padding: 1rem 4rem;
+    font-size: 1.5em;
+    border-radius: 15px;
+}
+
+
+.count-size ul > li {
+	text-transform: none;
+}
+
+.lil-circle {
+	height: 25px;
+  	width: 25px;
+  	border-radius: 50%;
+  	/*display: inline-block;*/
+  	display: flex;
+  	align-items: center; 
+  	justify-content: center;
+}
+
+.blanco {
+	background-color: #fff;
+	border: 1px solid #CBB989;
+}
+
+.verde {
+	background-color: #a0b29a;
+}
+
+/* query's */
+/*<500px S*/
+@media only screen and (max-width: 499px) {
+	.count-size ul {
+		padding: 1em 0em 1em 0em;
+	}
+
+	.count-size ul > li {
+		display: block;
+		padding: 0;
+	}
+
+	.count-size ul li span{
+		font-size: 6rem;
+	}
+}
+
+/*500-1200 M*/
+@media only screen and (min-width: 500px) and (max-width: 1199px) { 
+
+}
+
+/*>1200px L*/
+@media only screen and (min-width: 1200px) { 
+
+}
+
+
+
+.count-size {
+	font-family: "Silk";
+}
+
+/**
+ * So I can make this quick, I will divide everything on sections and
+ * inherith
+ * INVITATION SECTION */
+
+.invitacion {
+	padding: 2rem;
+}
+
+.invitacion-img h3 {
+	font-family: "Allura", cursive;
+  	font-weight: 400;
+  	font-style: normal;
+  	padding-top: 5rem;
+  	margin-bottom: 0;
+}
+
+.invitacion-img p {
+	font-size: 1.5em;
+
+}
+
+.invitacion-novios h2{
+	padding-bottom: 1.5rem;
+}
+
+.invitacion-novios p{
+	margin-bottom: 0;
+}
+
+.invitacion-novios hr {
+	width: 8em;
+    margin: 30px auto;
+    opacity: 1;
+}
+
+.invitacion-anillos img {
+  	width: 3rem;
+  	height: auto;
+  	padding-top: 3.5rem;
+  	padding-bottom: 2rem;
+}
+
+.invitacion-anillos p {
+	margin-left: 1rem;
+	margin-right: 1rem;
+}
+
+
+/**
+* COUNTDOWN
+*/
+
+:root {
+  --smaller: .75;
+}
+
+li {
+  display: inline-block;
+  font-size: 1.5em;
+  list-style-type: none;
+  padding: 1em;
+  text-transform: uppercase;
+}
+
+li span {
+  display: block;
+  font-size: 4.5rem;
+}
+
+.emoji {
+  display: none;
+  padding: 1rem;
+}
+
+.emoji span {
+  font-size: 4rem;
+  padding: 0 .5rem;
+}
+
+@media all and (max-width: 768px) {
+  h1 {
+    font-size: calc(1.5rem * var(--smaller));
+  }
+  
+  li {
+    font-size: calc(1.125rem * var(--smaller));
+  }
+  
+  li span {
+    font-size: calc(3.375rem * var(--smaller));
+  }
+}
+/**/
+/* EXTRAS */
+
+.bg-data{
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+}
+
+.section_one {
+	background-image: url("../assets/foto_1.jpeg");
+}
