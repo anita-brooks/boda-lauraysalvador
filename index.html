@@ -11,7 +11,7 @@
 	<link rel="stylesheet" href="src/details.css">
 	<title>Nuestra Boda</title>
 </head>
-<body class="container universal text-center">
+<body class=" universal text-center">
 
 	<div class="container"> <!-- this div has everything -->
 
@@ -95,48 +95,58 @@
 
 		<div class="ceremoniayrecepcion">
 			<hr>
-			<h2> Lugar </h2>
-
-
-			<!-- templo -->
-			<div class="imagen-prop">
+			<div class="imagen-prop subtitulo">
 				<h2>Ceremonia Religiosa</h2>
-				<img src="assets/templo.jpg" alt="">
+				<div class="imagen_templo"></div>
 				<p>Santuario de la Virgen del Carmen</p>
 				<p>Tlalpujahua, Michoacán</p>
 				<p>1:00 p.m.</p>
 				<p>
-					<button>Ver mapa</button>
+					<a href="https://maps.app.goo.gl/71W1FGoUVTKmR3LK6">
+						<button>Ver mapa</button>
+					</a>
 				</p>
 			</div>
 			<!-- hacienda -->
-			<div class="imagen-prop">
+			<div class="imagen-prop subtitulo">
 				<h2>Recepción</h2>
-				<img src="assets/hacienda.jpg" alt="">
+				<div class="imagen-hacienda"></div>
 				<p>Hacienda Concepción de Borda</p>
 				<p>Tlalpujahua, Michoacán</p>
 				<p>3:30 p.m.</p>
 				<p>
-					<button>Ver mapa</button>
+					<a href="https://maps.app.goo.gl/XvXTBD7hfZVrGfvw9">
+						<button>Ver mapa</button>
+					</a>
 				</p>
 			</div>
 		</div>
 
 
-		<div class="codigovestimenta">
+		<div class="codigovestimenta subtitulo">
 			<hr>
 			<h2>Código de Vestimenta</h2>
 			<div class="vestimenta">
 				<img src="assets/men_code.png" alt="">
-				<p>Formal</p>
+				<p class="formal">Formal</p>
 				<img src="assets/woman_code.png" alt="">
-				<p>Formal</p>
-				<p><b>No</b> blanco <span class="lil-circle blanco"></span> </p>
-				<p><b>No</b> verde <span class="lil-circle verde"></span> </p>
+				<p class="formal">Formal</p>
+				<p>
+					<span>
+						<span class="muse-itc">NO</span> blanco 
+					</span>
+					<span class="lil-circle blanco"></span> 
+				</p>
+				<p>
+					<span>
+						<span class="muse-itc">NO</span> verde 
+					</span>
+					<span class="lil-circle verde"></span>
+				</p>
 			</div>
 		</div>
 
-		<div class="mesaregalos muse-regular">
+		<div class="mesaregalos subtitulo">
 			<hr>
 			<h2>Mesa de Regalos</h2>
 			<div class="regalo">
@@ -148,12 +158,14 @@
 					<a href="https://mesaderegalos.liverpool.com.mx/milistaderegalos/51443643">
 						<button>Ver mesa</button>
 					</a>
-					<p>código: 51443643</p>
+					<p class="codigo-mesa">código: 51443643</p>
 				</p>
 			</div>
 		</div>
 	</div>
-
+	<div class="footer">
+		<p>2024, Tlalpujahua Michoacán</p>
+	</div>
 	<script type="text/javascript" src="src/bootstrap.min.js"></script>
 	<script type="text/javascript" src="src/countdown.js"></script>
 </body>

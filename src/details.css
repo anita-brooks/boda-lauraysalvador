@@ -48,6 +48,9 @@ src: url("muse_font_webkit/muse_italic-webfont.woff") format("woff");
 }
 
 
+.muse-itc{
+	font-family: 'Muse Italic';
+}
 
 .inicio {
 	color: #CBB989;
@@ -85,21 +88,7 @@ src: url("muse_font_webkit/muse_italic-webfont.woff") format("woff");
   	height: auto;
 }
 
-.vestimenta img {
-	width: 10rem;
-	height: auto;
-}
 
-.regalo img {
-	width: 3rem;
-	height: auto;
-	margin: 1em 0.5em 1em 0;
-}
-
-.liverpool img {
-	width: 15rem;
-	height: auto;
-}
 
 /*hr*/
 .smol {
@@ -112,11 +101,11 @@ src: url("muse_font_webkit/muse_italic-webfont.woff") format("woff");
 	font-weight:normal;
 	font-style:normal;
 	background-color: #F6F5F2;
-	padding: 0 0 2rem 0;
 }
 
 hr {
-	color: #C3B787;
+	color: #CBB989;
+	opacity: 1;
 }
 
 
@@ -128,9 +117,9 @@ button {
     color: white;
     border: none;
     font-family: 'Muse Regular';
-    padding: 1rem 4rem;
-    font-size: 1.5em;
-    border-radius: 15px;
+    padding: 0.7rem 3rem;
+    font-size: 1.1rem;
+    border-radius: 10px;
 }
 
 
@@ -138,53 +127,14 @@ button {
 	text-transform: none;
 }
 
-.lil-circle {
-	height: 25px;
-  	width: 25px;
-  	border-radius: 50%;
-  	/*display: inline-block;*/
-  	display: flex;
-  	align-items: center; 
-  	justify-content: center;
+
+
+
+
+.subtitulo h2{
+	padding-top: 2rem;;
+	font-size: 2rem;
 }
-
-.blanco {
-	background-color: #fff;
-	border: 1px solid #CBB989;
-}
-
-.verde {
-	background-color: #a0b29a;
-}
-
-/* query's */
-/*<500px S*/
-@media only screen and (max-width: 499px) {
-	.count-size ul {
-		padding: 1em 0em 1em 0em;
-	}
-
-	.count-size ul > li {
-		display: block;
-		padding: 0;
-	}
-
-	.count-size ul li span{
-		font-size: 6rem;
-	}
-}
-
-/*500-1200 M*/
-@media only screen and (min-width: 500px) and (max-width: 1199px) { 
-
-}
-
-/*>1200px L*/
-@media only screen and (min-width: 1200px) { 
-
-}
-
-
 
 .count-size {
 	font-family: "Silk";
@@ -238,6 +188,99 @@ button {
 	margin-right: 1rem;
 }
 
+.ceremoniayrecepcion h2 {
+	padding-bottom: 2rem;
+}
+
+.ceremoniayrecepcion p {
+	font-size: 1.3rem;
+}
+
+.imagen_templo{
+	background-image: url("../assets/templo.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 25rem;
+	margin: 1rem;
+}
+
+.imagen-hacienda{
+	background-image: url("../assets/hacienda.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 25rem;
+	margin: 1rem;
+}
+
+.formal {
+	font-size: 1.4rem;
+}
+
+.vestimenta {
+	padding-top: 1rem;
+}
+
+.vestimenta img {
+	width: 10rem;
+	height: auto;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+
+.lil-circle {
+	height: 25px;
+  	width: 25px;
+  	border-radius: 50%;
+  	display: inline-block;
+}
+
+.blanco {
+	background-color: #fff;
+	border: 1px solid #CBB989;
+}
+
+.verde {
+	background-color: #a0b29a;
+}
+
+
+.mesaregalos {
+	padding-bottom: 5rem;
+}
+
+.regalo {
+	padding-top: 2rem;
+}
+
+.regalo img {
+	width: 10rem;
+	height: auto;
+	margin: 1em 2em 1em 0;
+}
+
+.liverpool img {
+	width: 15rem;
+	height: auto;
+}
+
+.codigo-mesa {
+	font-size: 1.5rem;
+}
+
+.footer {
+	clear: both;
+	position: relative;
+	left: 0;
+	height: 10vh;
+	bottom: 0;
+	width: 100%;
+	background-color: #4f4f4f;
+	color: white;
+	text-align: center;
+	line-height: 10vh;
+}
 
 /**
 * COUNTDOWN
@@ -283,16 +326,30 @@ li span {
     font-size: calc(3.375rem * var(--smaller));
   }
 }
-/**/
-/* EXTRAS */
 
-.bg-data{
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	height: 100vh;
+/* query's */
+/*<500px S*/
+@media only screen and (max-width: 499px) {
+	.count-size ul {
+		padding: 1em 0em 1em 0em;
+	}
+
+	.count-size ul > li {
+		display: block;
+		padding: 0;
+	}
+
+	.count-size ul li span{
+		font-size: 6rem;
+	}
 }
 
-.section_one {
-	background-image: url("../assets/foto_1.jpeg");
+/*500-1200 M*/
+@media only screen and (min-width: 500px) and (max-width: 1199px) { 
+
+}
+
+/*>1200px L*/
+@media only screen and (min-width: 1200px) { 
+
 }
